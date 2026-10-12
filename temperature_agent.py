@@ -44,6 +44,8 @@ for room, temperature in readings:
     action = temperature_agent(room, temperature)
     print(f"{room}\t{temperature}\t\t{action}")
 
+    print("\nTemperature agent completed.")
+
 print("\nHeater ON Count:")
 for room, count in heater_on_count.items():
     print(f"{room}: {count}")
